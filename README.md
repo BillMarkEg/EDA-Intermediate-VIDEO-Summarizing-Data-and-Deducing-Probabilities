@@ -1,1 +1,1 @@
-# EDA-Intermediate-VIDEO-Summarizing-Data-and-Deducing-Probabilities
+# EDA-Intermediate-Summarizing-Data-and-Deducing-Probabilities
