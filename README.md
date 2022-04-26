@@ -24,8 +24,7 @@
 <br> scatter plot for correlation 
 <br> corr fun 
 <br> or just tool-> data analyses->regression
-<br> Multiple R -> regression
-<br> R square and adj R square -> how much variance in data  is captured by regression(straight line. of regression) (if there is multiple regression(columns). so one value to show whole regression. we have.)
+<br> R square and adj R square -> how much variance in data  is captured by regression(straight line. of regression)
 <br> regression tries to fit a strait line so formule is y=mx + c
 <br> intercept is c in the prev formula.
 <br> m is slope
