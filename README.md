@@ -48,20 +48,20 @@
 <br> we do regression with 2 options 1- **ols** -> using stats model like we did in excel. 2-using ml model 
 <br> ml linear reg: normalize = true means to make all values between 0 and 1.
 <br> R square -> measure how far is pred data from straint line (original y-train.<we call it the output itself>)
+### bayes rule  
+<br> probability of scenario based on other scenarios.
+<br> assume that all features are independant.
+<br> prior probability is always based on original data means basiclly abd before anything there are probability to have runner on streat highter than police man
+<br> also on titanic we take label on train set to get frequencey of survival for our prior probabilities of survival or death.
+<br> so the prior probability is based on frequencey of the label we wanna predict itself.
+<br> ==== in notenook it get frequencey of survived women as rule based and it give us probability of 72 % while bayes give us 79 % which is better 
+<br> note that naive bayes model in python gives us conditional probability not prior so we took label in train set to calc prior probability then we dropped it 
+<br> for our ml model to calc conditional probaility. 
+<br> so note that depending on prior probability in our case without knowing gender would be very bad. as gender give us accuracy of 79 %
+<br> conditional is got by multipling all conditional features in out case just gender.... then to get final * by prior. and other option of not survival * by prior. 
+<br> https://www.geeksforgeeks.org/naive-bayes-classifiers/
+### seaborn data visualizations  
 <br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
