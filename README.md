@@ -8,6 +8,7 @@
 <br> so pos * pos => pos relationship and so on.
 ### Performing Exploratory Data Analysis in Spreadsheets
 ### univar 
+<br>  correlation measures the degree of a relationship between two variables (x and y), whereas regression is how one variable affects another
 <br> first -> tool menu -> add analyses option
 <br> tool -> data analyses -> descrptive stat to get all analyses you may need.
 <br> neg **skewness** => skewed to the left
@@ -19,34 +20,36 @@
 <br> select pivot data on bucketing  -> insert -> pivot chart (default : historgram) 
 <br> r-click on chart of historag -> change chart type to pie chart. -> r-click add data label -> r-click on element of chart and inc font size.
 <br> click on pie chart -> fields of pivot table -> values -> change it to grant of total % 
-### bivar
+### bi-var
+<br> scatter plot for correlation 
+<br> corr fun 
+<br> or just tool-> data analyses->regression
+<br> Multiple R -> regression
+<br> R square and adj R square -> how much variance in data  is captured by regression(straight line. of regression) (if there is multiple regression(columns). so one value to show whole regression. we have.)
+<br> regression tries to fit a strait line so formule is y=mx + c
+<br> intercept is c in the prev formula.
+<br> m is slope
+<br> head size is value of m.
+<br> the significance of result -> if pvalue is less than .05 and tstat is positive.
+### multi-var 
+<br> correlation -> tool -> data analyses -> correlation -> select whole data.
+<br> better to use correlation as it has magintute bet 1 and -1 so normalized than co variance. 
+<br> some vis -> insert -> pivot chart 
+<br> check excel to find regression summary and total R square means .8 so data is correlated overall. 
+### Summarizing Data and Deducing Probabilities Using Python
+<br> Jupyter : Descriptive stat using numpy pandas and stats model 
+<br> percentile:interpolation is lower so of q1 or q3 lies between 2 values will get lower of them.
+<br> linear regression is same as correlation but regression allows us to predict new data. also correlation is relationship but regression measure how one var 
+<br> affect the other one. (nearly the same.)
+<br> default plot on two col is the scatter plot.
+<br> Correlation is used to get association between two variables while (linear) regression is used to estimate the best straight line to summarise the association
+<br> we can use both to find rel between 2 var.
+<br> reg-> for predictions too.
+<br> jupyter: regression with multi var data
+<br> we do regression with 2 options 1- **ols** -> using stats model like we did in excel. 2-using ml model 
+<br> ml linear reg: normalize = true means to make all values between 0 and 1.
+<br> R square -> measure how far is pred data from straint line (original y-train.<we call it the output itself>)
 <br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
