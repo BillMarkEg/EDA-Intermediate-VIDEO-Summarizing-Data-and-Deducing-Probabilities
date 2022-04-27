@@ -49,7 +49,7 @@
 <br> ml linear reg: normalize = true means to make all values between 0 and 1.
 <br> R square -> measure how far is pred data from straint line (original y-train.<we call it the output itself>)
 ### bayes rule  
-<br> probability of scenario based on other scenarios.
+<br> probability of **scenario based on other scenarios**.
 <br> assume that all features are independant.
 <br> prior probability is always based on original data means basiclly abd before anything there are probability to have runner on streat highter than police man
 <br> also on titanic we take label on train set to get frequencey of survival for our prior probabilities of survival or death.
@@ -61,46 +61,51 @@
 <br> conditional is got by multipling all conditional features in out case just gender.... then to get final * by prior. and other option of not survival * by prior. 
 <br> https://www.geeksforgeeks.org/naive-bayes-classifiers/
 ### seaborn data visualizations  
-<br> 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+### KDE plot
+<br> notes from jupyter :
+<br> seaborn is build on the top of matplot lib
+<br> kde is just historgram and line over it (very simple.)
+<br> make it false to just get histogram in seaborn.
+<br> rug = true means to add actual data point values on the histogram. 
+<br> define specific height to only show data points exists on data and ignore frequency bar.
+<br> **bw** is the **bandwidth** of data representation. so when its smaller --> show more details.
+<br> we can add many bandwidths as .1 and 1 as we did on jupyter.
+#### bi variant analyses
+<br> playing arround scatter plot 
+<br> **hexbin** => so its is like scatter plot but point with high frequency is darker. 
+<br> **join plot** -> scatter plot + frequencey plot.  <we can make scatter plot as hex plot too. in parameter : kind = hex .>
+#### regresion plots
+<br> **LM plot** shows **regresion** 
+<br> using hue with LM make 2 lines for each elemnt of the hue 
+<br> hue -> in english means color.
+<br> size is categorical data (1,2,3,4,5,6)
+<br> col option to filter and make 2 graphs. of regression
+<br> hue and col on same col will make multiple graphs and each with different color.
+<br> **Reg plot** is same as  LM plot  but has more flexibility it can accept  pandas series  and array as well.  
+<br> **LM plot** just aceept pandas series. 
+<br> **logistic** in reg plot = true means to make logistic regression : used for classification so will see aline which called **classification separator**. 
+#### pairwise relationships 
+<br> **pair plot** and pair grid => used to make visualization on multiple vars. 
+<br> **pair grid** has more flexibility and options over pair plot
+<br> **map_diag** => what chart on diagonal
+<br> **map_off_diag** =>  what chart on NOT diagonal line.
+#### visualize categorical data
+<br> **strip plot** to work with categorical data 
+<br> jitter = false : all data will be showed as single line 
+<br> **swarm plot** => same as strip but without any overaloing of the points so you can see how many values clearly than overlaping in strip plot
+<br> in swarm plot => palette : 'set1' and dodge = True if you wanna separate data based on the hue eg. if the hue is sex so male and female data will be separated.
+<br> dpdge = false means to not separate and overlap.so charts will not be side by side but over each others.
+<br> and not above each other and only color change . no all will be with diff color but in sep line.
+#### box plot
+<br> you can make multiple box plots on column based on filteration or values of other column eg sex so males and females will be 2 box plot for their grades foreg. 
+<br> puting another column in the hue will make 2 box plot for each color too the same way as sex did in prev. so we have grades of males who are accepted 
+<br> and plot of males who are rejected and same for females.
+<br> **Violinplot** -> show the same as boxplot but it shows the distributtion of data based on KDE distribution.
+<br> we can **mix swarm plot + box plot** th **show distribution** of data and **all data points too** using swarm plot.
+#### catigorical plots 
+<br> bar plot -> position of  line in the midle of it is the average.
+<br> vertical line (line itself not the position of it ) is the error estimate which means uncertinity arround this estimates (avg)
+<br> count plot => show frequency for cat data 
+<br> ci = sd to make vertical line in bar plot be the standard deviation rather than error estimate.
+<br> **cat plot ** the mean chart keyward and we say kind = .... may be box, line, point plot and others.
+##### END 
